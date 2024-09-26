@@ -1,0 +1,35 @@
+#container {
+padding: 4.75rem 2.18rem 9.56rem 1rem;
+max-width: 73rem;
+margin: auto;
+
+& #logo {
+
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+ 
+  & img {
+    height: 2.125rem;
+  }
+  & span {
+    color: var(--color-content-primary);
+    font: 800 1.5rem var(--font-family-display);
+  } 
+ }
+}
+
+@media (max-width: 68.75rem) {
+
+ #container {
+  display: flex;    
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & #logo {
+
+    transform: none;
+  }
+ }
+}
